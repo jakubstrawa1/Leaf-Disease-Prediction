@@ -9,8 +9,11 @@ script_dir = os.path.dirname(__file__)
 rel_path = "plant_disease.h5"
 abs_file_path = os.path.join(script_dir, rel_path)
 
-
 model = load_model(abs_file_path)
+
+#if the loading above doesn't work just try
+#model = load_model('copy the path manually to the plant_disease.h5 file')
+
 
 
 CLASS_NAMES = ['Corn-Common_rust', 'Potato-Early_blight', 'Tomato-Bacterial_spot']
