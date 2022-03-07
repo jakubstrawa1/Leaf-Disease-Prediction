@@ -2,11 +2,15 @@
  ## to run the file, just go into the folders directory and type streamlit run main_app.py 
  provided you downloaded all the requirements from requirements.txt file :)
  
-Here's a project that i built with TensorFlow. The model predicts whether a leaf has some disease or not. It was built using 900 photos of plants with bacterias or some other diseases. Used the 80/20 technique to split training and testing data. Used 50 epochs training which resulted in 98% accuracy. 
+Here's a project that i built with TensorFlow. The model predicts which of 4 diseases a leaf has. It was trained using 900 photos with 80/20 split of training and testing data. I was actually shocked it got 98% accuraccy on unseen previously test data.
 
-For the layers i used Conv2D and MaxPooling2D with Sequential model. 
+Normalized the data using python's diving method which in my opinion is AMAZING, you don't need to loop through all the pictures and divide them by 225, you can just do / 225.0. Then i reshaped the vectors.
+
+For compressing the photos i used Conv2D and MaxPooling2D twice which i think is a rule of thumb of computer vision or at least extracting features from photos. The i flattened the image, added dense layer with activation function relu so it doesnt have negative values, then at the end obviously a dense layer with 3 outputs, because there are 3 labels, which i have declared as 0,1,2 above.
 
 I've learned a lot coding this project. I'm completely hooked on OpenCV and TensorFlow as well as ScikitLearn now. Pretty sure i'm gonna improve upon this code in the nearest future.
+
+
  
  ![alt text](prediction.png)
- ![alt text](prediction2.png)
+
