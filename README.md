@@ -4,7 +4,7 @@
  
 Here's a project that i built with TensorFlow. The model predicts which of 4 diseases a leaf has. It was trained using 900 photos with 80/20 split of training and testing data. I was actually shocked it got 98% accuraccy on unseen previously test data.
 
-Normalized the data using python's diving method which in my opinion is AMAZING, you don't need to loop through all the pictures and divide them by 225, you can just do / 225.0. Then i reshaped the vectors.
+Normalized the data using python's dividing method which in my opinion is AMAZING, you don't need to loop through all the pictures and divide them by 225, you can just do / 225.0. Then i reshaped the vectors.
 
 For compressing the photos i used Conv2D and MaxPooling2D twice which i think is a rule of thumb of computer vision or at least extracting features from photos. The i flattened the image, added dense layer with activation function relu so it doesnt have negative values, then at the end obviously a dense layer with 3 outputs, because there are 3 labels, which i have declared as 0,1,2 above.
 
