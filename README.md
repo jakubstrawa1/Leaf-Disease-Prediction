@@ -6,7 +6,7 @@ Here's a project that i built with TensorFlow. The model predicts which of 4 dis
 
 Normalized the data using python's dividing method which in my opinion is AMAZING, you don't need to loop through all the pictures and divide them by 225, you can just do / 225.0. Then i reshaped the vectors.
 
-For compressing the photos i used Conv2D and MaxPooling2D twice which i think is a rule of thumb of computer vision or at least extracting features from photos. The i flattened the image, added dense layer with activation function relu so it doesnt have negative values, then at the end obviously a dense layer with 3 outputs, because there are 3 labels, which i have declared as 0,1,2 above.
+For compressing the photos and ultimately building the model i used Conv2D and MaxPooling2D twice which i think is a rule of thumb of computer vision or at least extracting features from photos. The i flattened the image, added dense layer with activation function relu so it doesnt have negative values, then at the end obviously a dense layer with 3 outputs, because there are 3 labels, which i have declared as 0,1,2 above.
 
 I've learned a lot coding this project. I'm completely hooked on OpenCV and TensorFlow as well as ScikitLearn now. Pretty sure i'm gonna improve upon this code in the nearest future.
 
