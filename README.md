@@ -8,7 +8,8 @@ Normalized the data using python's dividing method which in my opinion is AMAZIN
 
 For compressing the photos and ultimately building the model i used Conv2D and MaxPooling2D twice which i think is a rule of thumb of computer vision or at least extracting features from photos. The i flattened the image, added dense layer with activation function relu so it doesnt have negative values, then at the end obviously a dense layer with 3 outputs, because there are 3 labels, which i have declared as 0,1,2 above.
 
-I've learned a lot coding this project. I'm completely hooked on OpenCV and TensorFlow as well as ScikitLearn now. Pretty sure i'm gonna improve upon this code in the nearest future.
+I've learned a lot coding this project. I feel like i've used 30 epochs too much on training the model since the accuracy after 15 epochs was 1.0. But hey! I feel like that's still something to show off because learning on your own mistakes is the biggest reward.
+I'm completely hooked on OpenCV and TensorFlow as well as ScikitLearn now. Pretty sure i'm gonna improve upon this code in the nearest future.
 
 
  
